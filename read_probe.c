@@ -1,3 +1,25 @@
+/**
+@file	 read_probe.c
+@brief   Read a requested 1-wire temperature probe
+@author  Ken Koster / N7IPB
+@date	 2018/02/21
+This is used by SvxLink and snmpd to read DS18B20 temperature probes.
+
+\verbatim
+Copyright (C) 2018 Ken Koster / N7IPB
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU General Public License for more details.
+You should have received a copy of the GNU General Public License
+along with this program; if not, write to the Free Software
+Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
+\endverbatim
+*/
 /*
  *    Read the requested temperature probe
  *    Requires a symbolic link at /tmp/temps/<probename>
@@ -6,7 +28,6 @@
  *    A sample script to create the links is included with
  *    this program.
  * 
- *    N7IPB - 2/21/2018
  */
 #include <stdio.h>
 #include <string.h>
