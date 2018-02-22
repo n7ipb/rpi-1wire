@@ -7,7 +7,7 @@ README
         other programs.
 
         These are used by the RPi based SvxLink repeater controllers on 
-        the Pacific Northwest 220 Repeater Network.  http://pnw220.wetnet.net
+        the Pacific Northwest 220Mhz Repeater Network.  http://pnw220.wetnet.net
 
 ### Programs
 ------------------------------------------------------------------------
