@@ -32,7 +32,7 @@ link_probes
 
         When edited to contain the ID/name pairs for 
         attached probes this script can be run to create
-        symbolic links in /tmp/temps and us used by 'read_probe'
+        symbolic links in /tmp/temps and is used by 'read_probe'
         
         run as './link_probes'
 
