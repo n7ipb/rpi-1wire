@@ -8,7 +8,7 @@ all: $(PROGRAMS)
 clean:
 	rm -f read_probes read_probe read_probe.o read_probes.o
 
-PREFIX = /usr/local
+PREFIX = /usr
 
 .PHONY: install
 install: $(PROGRAMS)
