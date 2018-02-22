@@ -1,4 +1,3 @@
-# rpi-1wire
 ------------------------------------------------------------------------
 README 
 ------------------------------------------------------------------------
@@ -10,7 +9,7 @@ README
         These are used by the RPi based SvxLink repeater controllers on 
         the Pacific Northwest Repeater Network.  http://pnw220.wetnet.net
 
-# Programs
+### Programs
 ------------------------------------------------------------------------
 
 read_probes   
@@ -26,7 +25,7 @@ read_probes
         
         See link_probes for examples from a typical installation
 
-read_probe <symbolicname>  
+read_probe `<symbolicname>`
 
         Returns the temperature in degrees F for the named probe. 
 
@@ -38,7 +37,7 @@ link_probes
         
         run as './link_probes'
 
-# Build and Install
+### Build and Install
 ------------------------------------------------------------------------
 
 To build:
@@ -50,7 +49,7 @@ To remove:
 
         sudo make uninstall
 
-# Configure probe names
+### Configure probe names
 ------------------------------------------------------------------------
 
 Run 'read_probes' to obtain the probe ID and identify each probe.
@@ -68,7 +67,7 @@ Then install and configure the link_probes.service
 	make link_probes
 	sudo systemctl enable link_probes.service
 
-	Reboot or manually configure with:
+Reboot or manually configure with:
 
 	sudo systemctl start link_probes
 
