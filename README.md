@@ -15,14 +15,16 @@ README
 
 read_probes   
 
-        Identifies and cycles through attached probes
-        and prints the probe ID and temperature.
-        Use this to identify probes by heating/cooling
-        each one and labeling as desired.  Then
-        edit link_probes with the resulting information
-        and your choice of symbolic names. See the
-        provided file for examples from a typical
-        installation
+        Identifies and cycles through attached probes printing out the 
+        probe ID and temperature.
+        
+        Use this to identify probes by heating/cooling each one and 
+        labeling as desired.  
+        
+        Then edit the link_probes script with the resulting information
+        and your choice of symbolic names. 
+        
+        See link_probes for examples from a typical installation
 
 read_probe <symbolicname>  
 
@@ -30,9 +32,9 @@ read_probe <symbolicname>
 
 link_probes
 
-        When edited to contain the ID/name pairs for 
-        attached probes this script can be run to create
-        symbolic links in /tmp/temps and is used by 'read_probe'
+        When edited to contain the ID/name pairs for attached probes
+        this script can be run to create symbolic links in /tmp/temps 
+        for use by 'read_probe'
         
         run as './link_probes'
 
