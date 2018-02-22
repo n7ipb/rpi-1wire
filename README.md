@@ -26,7 +26,7 @@ read_probes
 
 read_probe <symbolicname>  
 
-Returns the temperature in degrees F for the named probe. 
+        Returns the temperature in degrees F for the named probe. 
 
 link_probes
 
