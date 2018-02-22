@@ -1,0 +1,10 @@
+;;;;; Author: Ken Koster <n7ipb@wetnet.net>
+
+[Unit]
+Description=Script to create named links for Raspberry Pi 1-wire temperature probes
+
+[Service]
+ExecStart=/usr/bin/link_probes
+
+[Install]
+WantedBy=default.target

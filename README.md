@@ -49,3 +49,28 @@ To build:
 To remove:
 
         sudo make uninstall
+
+# Configure probe names
+------------------------------------------------------------------------
+
+Run 'read_probes' to obtain the probe ID and identify each probe.
+
+	The easiest way to do this is run the program and heat or cool
+	each probe while monitoring the output.  Write down the ID for
+	each and label the probes.
+
+	Then edit 'link_probes' and add lines for each.  Examples from our
+	Lyman 224.78 machine are commented out in the script.  Use them 
+	as examples.
+
+Then install and configure the link_probes.service
+
+	make link_probes
+	sudo systemctl enable link_probes.service
+
+	Reboot or manually configure with:
+
+	sudo systemctl start link_probes
+
+
+
