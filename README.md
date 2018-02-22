@@ -13,22 +13,28 @@ README
 # Programs
 ------------------------------------------------------------------------
 
-read_probes     -       Identifies and cycles through attached probes
-                        and prints the probe ID and temperature.
-                        Use this to identify probes by heating/cooling
-                        each one and labeling as desired.  Then
-                        edit link_probes with the resulting information
-                        and your choice of symbolic names. See the
-                        provided file for examples from a typical
-                        installation
+read_probes   
 
-read_probe <symbolicname>  Returns the temperature in degrees F for 
-                        the named probe. 
+        Identifies and cycles through attached probes
+        and prints the probe ID and temperature.
+        Use this to identify probes by heating/cooling
+        each one and labeling as desired.  Then
+        edit link_probes with the resulting information
+        and your choice of symbolic names. See the
+        provided file for examples from a typical
+        installation
 
-link_probes             When edited to contain the ID/name pairs for 
-                        attached probes this script can be run to create
-                        symbolic links in /tmp/temps to be used by
-                        read_probe. run as './link_probes'
+read_probe <symbolicname>  
+
+Returns the temperature in degrees F for the named probe. 
+
+link_probes
+
+        When edited to contain the ID/name pairs for 
+        attached probes this script can be run to create
+        symbolic links in /tmp/temps and us used by 'read_probe'
+        
+        run as './link_probes'
 
 # Build and Install
 ------------------------------------------------------------------------
