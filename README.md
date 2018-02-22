@@ -60,8 +60,7 @@ Run 'read_probes' to obtain the probe ID and identify each probe.
 	each and label the probes.
 
 	Then edit 'link_probes' and add lines for each.  Examples from our
-	Lyman 224.78 machine are commented out in the script.  Use them 
-	as examples.
+	Lyman 224.78 machine are commented out in the script. 
 
 Then install and configure the link_probes.service
 
