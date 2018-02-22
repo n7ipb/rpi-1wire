@@ -100,7 +100,7 @@ int main (void) {
     rootNode = malloc( sizeof(struct ds18b20) );
     devNode = rootNode;
     int8_t devCnt = findDevices(devNode);
-    printf("\nFound %d devices\n\n", devCnt);
+    printf("\nFound %d devices\nCtrl-C to exit\n\n", devCnt);
     free(rootNode);
     while(1) {
         rootNode = malloc( sizeof(struct ds18b20) );
