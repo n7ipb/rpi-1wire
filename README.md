@@ -28,6 +28,7 @@ read_probes
 read_probe `<symbolicname>`
 
         Returns the temperature in degrees F for the named probe. 
+	Returns a list of available names when no name is specified
 
 link_probes
 
@@ -64,12 +65,21 @@ Run 'read_probes' to obtain the probe ID and identify each probe.
 
 Then install and configure the link_probes.service
 
-	make link_probes
+	sudo make link_probes
 	sudo systemctl enable link_probes.service
 
 Reboot or manually configure with:
 
 	sudo systemctl start link_probes
 
+### Test
+------------------------------------------------------------------------	
 
+Test your installation
 
+	read_probe `<symbolicname>`
+	
+	Example: 
+	$ read_probe transmitter
+	90.5
+	$
