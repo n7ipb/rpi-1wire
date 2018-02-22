@@ -47,7 +47,7 @@ int main( int argc, const char* argv[] )
     
     if (argc != 2) {
         printf ("Usage: %s <probename> \n",argv[0]);
-        printf ("Available probes:\n");
+        printf ("Available probe names:\n");
         if ((dir = opendir (devPath)) != NULL) {
             /* print all the files and directories within directory */
             while ((ent = readdir (dir)) != NULL) {
