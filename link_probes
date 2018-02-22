@@ -1,0 +1,20 @@
+#!/bin/sh -e
+#
+# Executing this file will create named links for 1-wire temperature probes
+# Run 'read_probes' to cycle through the attached probes and
+# identify them.  Then place the id number of each in this
+# file along with the symbolic name you want for each
+#
+# 'read_probe <symbolic name>' will then return the current temperature
+# in degrees F
+#
+# ln -s /sys/bus/w1/devices/<id number>/w1_slave <symbolic name>
+#
+mkdir -p /tmp/temps
+cd /tmp/temps
+ln -fs /sys/bus/w1/devices/28-011628aacbee/w1_slave power_supply
+ln -fs /sys/bus/w1/devices/28-021625d7e1ee/w1_slave outside
+ln -fs /sys/bus/w1/devices/28-03164599cfff/w1_slave amplifier
+ln -fs /sys/bus/w1/devices/28-0316536235ff/w1_slave cabinet
+ln -fs /sys/bus/w1/devices/28-0316537f05ff/w1_slave link_radio
+ln -fs /sys/bus/w1/devices/28-0316538283ff/w1_slave transmitter
